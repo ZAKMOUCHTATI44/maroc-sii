@@ -93,7 +93,7 @@ const Services = () => {
         </div>
         <div>
           <img
-            src="/service-1.jpg"
+            src="/service-2.jpg"
             className="rounded-3xl"
             width={600}
             height={450}
@@ -151,7 +151,7 @@ const Services = () => {
         </div>
         <div>
           <img
-            src="/service-2.jpg"
+            src="/service-1.jpg"
             className="rounded-3xl"
             width={600}
             height={450}
