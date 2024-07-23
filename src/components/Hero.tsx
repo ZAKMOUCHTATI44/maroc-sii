@@ -14,9 +14,6 @@ const Hero = () => {
               <h2 className="text-5xl lg:text-6xl font-bold">
                 Libérez le potentiel numérique de votre entreprise
               </h2>
-              <div className="">
-        Hover me
-      </div>
               <div>
                 <Link
                   spy={true}
