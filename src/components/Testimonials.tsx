@@ -13,7 +13,7 @@ const Testimonials = () => {
         "L’équipe de SII Maroc a su transformer notre vision en réalité. Leurs solutions technologiques ont révolutionnés notre plateforme d'apprentissage en ligne, la rendant plus interactive et accessible pour nos étudiants. Leur engagement et leur créativité ont été déterminants dans le succès de notre projet.",
     },
   ];
-  return <div className="container mx-auto my-24 flex flex-col gap-12">
+  return <div className="container mx-auto my-24 flex flex-col gap-12" id="testimonials">
     <h2 className="text-3xl font-bold text-center uppercase text-main-color">
     Paroles de clients satisfaits
     </h2>

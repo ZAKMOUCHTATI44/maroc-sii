@@ -1,5 +1,6 @@
 import NavMobile from "@/layouts/NavMobile";
 import ChosseLang from "./ChosseLang";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const links = [
@@ -17,32 +18,40 @@ const Navbar = () => {
     },
     {
       title: "Chiffres Clés",
-      href: "about-us",
+      href: "keys",
     },
     {
       title: "Témoignages clients",
-      href: "conseils-airbnb",
+      href: "testimonials",
     },
   ];
   return (
     <>
-      <div className="py-3 sticky top-0 bg-white z-30 shadow-md ">
+      <div className="py-3  top-0 bg-white z-30 shadow-md ">
         <div className="container mx-auto flex justify-between items-center">
           <div>
             <img src={"/logo.svg"} alt="SII MAROC" width={75} height={150} />
           </div>
           <div className="flex gap-5 items-center">
-
-          <ul className="hidden lg:flex   gap-5">
-            {links.map((link) => (
-              <li className="font-medium" key={link.href}>
-                {link.title}
-              </li>
-            ))}
-          <ChosseLang />
-          </ul>
-            </div>
-      <NavMobile links={links} />
+            <ul className="hidden lg:flex items-center gap-5">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  activeClass="active"
+                  to={link.href}
+                  className="font-medium cursor-pointer border-b-4 border-transparent transition-all duration-300 ease-in-out hover:border-b-blue-500 hover:text-main-color"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                >
+                  {link.title}
+                </Link>
+              ))}
+              <ChosseLang />
+            </ul>
+          </div>
+          <NavMobile links={links} />
         </div>
       </div>
     </>

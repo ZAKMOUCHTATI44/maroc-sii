@@ -20,8 +20,8 @@ const Teams = () => {
     },
   ];
   return (
-    <div className="container mx-auto">
-      <h2 className="font-bold text-3xl text-center my-12">
+    <div className="container mx-auto" id="about-us">
+      <h2 className="font-bold text-3xl text-center py-12">
         L'ÉQUIPE QUI FAIT LA DIFFÉRENCE
       </h2>
       <div className="grid lg:grid-cols-3 gap-5">

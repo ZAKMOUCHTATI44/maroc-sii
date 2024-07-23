@@ -23,7 +23,7 @@ const Keys = () => {
     },
   ];
   return (
-    <div className="py-16 bg-keys text-white mt-12 mx-5 rounded-2xl">
+    <div className="py-16 bg-keys text-white mt-12 mx-5 rounded-2xl" id="keys">
       <h3 className="lg:text-5xl  text-2xl font-bold text-center">
         L'ascension fulgurante de SII Maroc
       </h3>

@@ -64,7 +64,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="container mx-auto my-24">
+    <div className="container mx-auto py-24" id="services">
       <h2 className="text-3xl font-bold text-[#0049F8] text-center">
         Nos services, votre chemin vers la réussite
       </h2>

@@ -7,7 +7,7 @@ import comptacom from "/clients/COMPTACOM.png";
 const Partenrs = () => {
   const logos = [orange, bouyguess, deltaDore, hps, comptacom];
   return (
-    <div className="container mx-auto my-24">
+    <div className="container mx-auto py-24" id="partenaires">
       <h2 className="text-xl font-semibold text-center">
         Plus de 200 startups et entreprises internationales nous font confiance
       </h2>
