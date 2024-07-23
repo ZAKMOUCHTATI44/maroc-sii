@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <div className="bg-[#002d98] text-white py-12">
-      <div className="container mx-auto grid grid-cols-3 gap-5">
+      <div className="container mx-auto grid lg:grid-cols-3 gap-5">
         <div className="flex flex-col gap-3">
           <img src="/sii-footer.svg" width={85} height={75} alt="" />
           <p className="text-base font-bold">SII Maroc Services</p>

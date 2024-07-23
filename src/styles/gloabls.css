@@ -80,6 +80,7 @@ body {
 
 .bg-keys{
     background-image: url("/bg-keys.jpg");
+    background-size: cover;
 }
 .bg-hero{
     background-image: url("/BANNER.jpg");

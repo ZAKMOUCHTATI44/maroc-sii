@@ -17,7 +17,7 @@ const Testimonials = () => {
     <h2 className="text-3xl font-bold text-center uppercase text-main-color">
     Paroles de clients satisfaits
     </h2>
-    <div className="grid grid-cols-2 gap-12">
+    <div className="grid lg:grid-cols-2 gap-12">
       {items.map((item) => (
         <div className="flex flex-col gap-3 text-center justify-center items-center" key={item.title}>
           <p className="text-gray-500 font-semibold text-sm">{item.description}</p>

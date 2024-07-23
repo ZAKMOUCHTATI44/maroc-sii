@@ -42,7 +42,7 @@ const Secteurs = () => {
   return (
     <div className="bg-[#f2f5fe]">
         <div className="container mx-auto py-24">
-        <div className="w-1/2 mx-auto text-center">
+        <div className="lg:w-1/2 mx-auto text-center">
             <h2 className="text-3xl font-bold uppercase">
             Des solutions sur mesure <br />{" "}
             <span className="text-main-color">pour chaque secteur</span>
@@ -53,7 +53,7 @@ const Secteurs = () => {
             défis et de vous aider à atteindre vos objectifs.
             </p>
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid lg:grid-cols-3 gap-5">
             {items.map((item) => (
             <div key={item.title} className="bg-blue-800 p-5 text-white flex flex-col gap-3 rounded-2xl">
                 <div className="flex justify-between">

@@ -33,7 +33,7 @@ const Keys = () => {
             <span className="lg:text-6xl md:text-5xl text-3xl  font-bold">
               <Counter target={number.value} label={number.icon} />
             </span>
-            <span className="lg:text-xl text-2xl font-semibold capitalize">
+            <span className="lg:text-xl text-xm font-semibold capitalize">
               {number.label}
             </span>
           </div>

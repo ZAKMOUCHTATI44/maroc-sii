@@ -5,9 +5,9 @@ const Hero = () => {
     <>
       <div className="bg-hero min-h-[80vh] flex justify-center items-center">
         <div className="container mx-auto flex  text-white">
-          <div className="grid grid-cols-2 gap-12 justify-center items-center">
+          <div className="grid lg:grid-cols-2 gap-12 justify-center items-center py-12">
             <div className="flex flex-col gap-5">
-              <h2 className="text-6xl font-bold ">
+              <h2 className="text-5xl lg:text-6xl font-bold">
                 Libérez le potentiel numérique de votre entreprise
               </h2>
               <div>

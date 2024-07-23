@@ -6,8 +6,8 @@ import {
   SelectTrigger,
 } from "@/components/ui/select";
 
-import fr from "../../public/flags/fr.svg";
-import en from "../../public/flags/en.svg";
+import fr from "/flags/fr.svg";
+import en from "/flags/en.svg";
 
 const langs = [
   {

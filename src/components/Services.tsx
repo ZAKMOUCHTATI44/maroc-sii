@@ -68,11 +68,11 @@ const Services = () => {
       <h2 className="text-3xl font-bold text-[#0049F8] text-center">
         Nos services, votre chemin vers la réussite
       </h2>
-      <p className="text-gray-700 text-sm font-semibold w-1/2 text-center mx-auto">
+      <p className="text-gray-700 text-sm font-semibold lg:w-1/2 text-center mx-auto">
         Avec notre expertise en solutions digitales sur mesure, nous vous aidons
         à transformer vos défis en opportunités de croissance et de succès.
       </p>
-      <div className="grid grid-cols-2 gap-5 my-12 items-center">
+      <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
         <div className="flex flex-col gap-5">
           <h2 className="text-3xl font-semibold text-main-color">
             Nous transformons vos idées en réalité
@@ -101,7 +101,7 @@ const Services = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-5 my-12 items-center">
+      <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
         <div>
           <img
             src="/service-2.avif"
@@ -130,7 +130,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-5 my-12 items-center">
+      <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
         <div className="flex flex-col gap-5">
           <h2 className="text-3xl font-semibold text-main-color">
             Service - Ingénierie métier et produit
