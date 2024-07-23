@@ -2,11 +2,11 @@ import { Button } from "./ui/button";
 
 const BandCta = () => {
   return (
-    <div className="bg-[#002d98] text-white py-12 my-24">
+    <div className="bg-[#002d98] text-white py-12 my-24 px-5">
       <div className="container mx-auto grid lg:grid-cols-3 gap-5 items-center">
         <div className="flex flex-col gap-5 col-span-2">
           <h2 className="text-xl lg:text-3xl font-bold">Transformez votre vision en réalité</h2>
-          <p className="text-xl font-medium">
+          <p className="text-sm lg:text-xl font-medium">
             Contactez-nous pour partager vos ambitions. Nous avons hâte de
             travailler ensemble et de faire de votre projet un succès.
           </p>
