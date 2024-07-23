@@ -14,7 +14,7 @@ const Hero = () => {
               <h2 className="text-5xl lg:text-6xl font-bold">
                 Libérez le potentiel numérique de votre entreprise
               </h2>
-              <div className="border-b-4 border-transparent transition-all duration-300 ease-in-out hover:border-b-blue-500">
+              <div className="">
         Hover me
       </div>
               <div>
