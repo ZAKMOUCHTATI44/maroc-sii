@@ -1,4 +1,3 @@
-import CallToAction from "./CallToAction";
 import Form from "./Form";
 
 const Hero = () => {
