@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 const BandCta = () => {
   return (
-    <div className="bg-[#002d98] text-white py-12 my-24">
+    <div className="bg-main-color text-white py-12 my-24">
       <div className="container mx-auto">
         <div className="lg:grid grid-cols-3 lg:gap-2 items-center flex flex-col gap-5">
           <div className="flex flex-col lg:gap-5  gap-2 col-span-2">

@@ -55,7 +55,7 @@ const Secteurs = () => {
         </div>
         <div className="grid lg:grid-cols-3 gap-5">
             {items.map((item) => (
-            <div key={item.title} className="bg-blue-800 p-5 text-white flex flex-col gap-3 rounded-2xl">
+            <div key={item.title} className="bg-main-color p-5 text-white flex flex-col gap-3 rounded-2xl">
                 <div className="flex justify-between">
                     <h2 className="text-xl font-semibold">
                         {item.title}

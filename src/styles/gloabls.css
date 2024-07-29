@@ -75,7 +75,7 @@ body {
 }
 
 :root {
-    --main-color: #0049F8
+    --main-color: #007eb5
 }
 
 .bg-keys{
@@ -84,4 +84,8 @@ body {
 }
 .bg-hero{
     background-image: url("/BANNER.jpg");
+}
+
+body{
+    background-color: #f2f5fe;
 }

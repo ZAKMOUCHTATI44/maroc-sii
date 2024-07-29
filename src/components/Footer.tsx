@@ -1,4 +1,5 @@
 import {
+  ChevronRight,
   Clock,
   Facebook,
   Instagram,
@@ -8,6 +9,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const socailMediaLinK = [
@@ -28,9 +30,31 @@ const Footer = () => {
       icon: <Youtube className="h-6 w-6" />,
     },
   ];
+  const links = [
+    {
+      title: "Partenaires",
+      href: "partenaires",
+    },
+    {
+      title: "Services",
+      href: "services",
+    },
+    {
+      title: "Qui sommes-nous ?",
+      href: "about-us",
+    },
+    {
+      title: "Chiffres Clés",
+      href: "keys",
+    },
+    {
+      title: "Témoignages clients",
+      href: "testimonials",
+    },
+  ];
 
   return (
-    <div className="bg-[#002d98] text-white py-12">
+    <div className="bg-main-color text-white py-12">
       <div className="container mx-auto grid lg:grid-cols-3 gap-5">
         <div className="flex flex-col gap-3">
           <img src="/sii-footer.svg" width={85} height={75} alt="" />
@@ -48,7 +72,25 @@ const Footer = () => {
           ))}
         </ul>
         </div>
-        <div className="flex flex-col gap-3 col-span-2">
+        <div className="flex flex-col gap-3 ">
+          <p className="text-xl font-semibold">Lien Rapide </p>
+          {links.map((link) => (
+                <Link
+                  key={link.href}
+                  activeClass="active"
+                  to={link.href}
+                  className="font-medium cursor-pointer border-b-4 border-transparent flex items-center gap-1"
+                  smooth={true}
+                  offset={50}
+                  duration={1000}
+                >
+                  <ChevronRight className="h-5 w-5" />
+                  {link.title}
+                </Link>
+              ))}
+        </div>
+
+        <div className="flex flex-col gap-3 col-span-">
           <p className="text-xl font-semibold">Contact </p>
           <ul className="flex flex-col gap-3">
             <li className="flex gap-2 items-start">
@@ -71,6 +113,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+       
       </div>
       <div className="container mx-auto">
       

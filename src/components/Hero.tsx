@@ -21,7 +21,7 @@ const Hero = () => {
                   offset={50}
                   duration={1000}
                   to={"services"}
-                  className="bg-white text-[#0049F8] px-12 py-3 rounded-3xl font-bold"
+                  className="bg-white text-[#0049F8] px-12 py-4 rounded-3xl font-bold"
                 >
                   Explorez nos solutions
                 </Link>

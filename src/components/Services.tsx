@@ -65,7 +65,7 @@ const Services = () => {
 
   return (
     <div className="container mx-auto py-24" id="services">
-      <h2 className="text-3xl font-bold text-[#0049F8] text-center">
+      <h2 className="text-3xl font-bold text-main-color text-center">
         Nos services, votre chemin vers la réussite
       </h2>
       <p className="text-gray-700 text-sm font-semibold lg:w-1/2 text-center mx-auto">

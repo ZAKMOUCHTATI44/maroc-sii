@@ -2,6 +2,7 @@ import BandCta from "./components/BandCta"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Keys from "./components/Keys"
+import Maps from "./components/Maps"
 import Navbar from "./components/Navbar"
 import Partenrs from "./components/Partenrs"
 import ScrollToTopButton from "./components/ScrollToTopButton"
@@ -20,6 +21,7 @@ const App = () => {
       <Teams />
       <Keys />
       <Secteurs />
+      <Maps />
       <BandCta />
       <Testimonials />
       <Footer />
