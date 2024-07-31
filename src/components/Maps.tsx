@@ -61,7 +61,7 @@ const Maps = () => {
             ))}
           </div>
         </div>
-        <img src="/public/maps.jpg" alt="MAPS " className="rounded-3xl" />
+        <img src="/maps.jpg" alt="MAPS " className="rounded-3xl" />
       </div>
     </div>
   );
