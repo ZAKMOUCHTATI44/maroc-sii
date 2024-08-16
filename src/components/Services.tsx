@@ -89,7 +89,7 @@ const Services = () => {
         <h2 className="font-semibold text-xl grid col-span-2">
         Choisissez votre service
         </h2>
-        <Select onValueChange={(e) => setStep(Number(e))} >
+        <Select defaultValue="0" onValueChange={(e) => setStep(Number(e))} >
           <SelectTrigger className="max-w-lg" >
             <SelectValue placeholder="Choisissez votre service" />
           </SelectTrigger>
