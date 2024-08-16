@@ -1,3 +1,14 @@
+import { useState } from "react";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 const Services = () => {
   const services = [
     {
@@ -63,6 +74,8 @@ const Services = () => {
     },
   ];
 
+  const [step, setStep] = useState(0);
+
   return (
     <div className="container mx-auto py-24" id="services">
       <h2 className="text-3xl font-bold text-main-color text-center">
@@ -72,93 +85,117 @@ const Services = () => {
         Avec notre expertise en solutions digitales sur mesure, nous vous aidons
         à transformer vos défis en opportunités de croissance et de succès.
       </p>
-      <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
-        <div className="flex flex-col gap-5">
-          <h2 className="text-3xl font-semibold text-main-color">
-            Nous transformons vos idées en réalité
-          </h2>
-          {services.map((item) => (
-            <div key={item.title} className="grid grid-cols-9 gap-3">
-              <div>
-                <img src={item.image} width={75} height={75} alt="" />
-              </div>
-              <div className="col-span-8">
-                <h2 className="text-base text-gray-900 font-semibold">
-                  {item.title}
-                </h2>
-                <p className="text-sm">{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div>
-          <img
-            src="/service-2.jpg"
-            className="rounded-3xl"
-            width={600}
-            height={450}
-            alt=""
-          />
-        </div>
+      <div className="flex justify-center  items-center gap-4 my-5">
+        <h2 className="font-semibold text-xl grid col-span-2">
+        Choisissez votre service
+        </h2>
+        <Select onValueChange={(e) => setStep(Number(e))} >
+          <SelectTrigger className="max-w-lg" >
+            <SelectValue placeholder="Choisissez votre service" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectLabel>Choisissez votre service</SelectLabel>
+              <SelectItem value="0">Développement logiciel & digital</SelectItem>
+              <SelectItem value="1">Infrastructure IT et télécom</SelectItem>
+              <SelectItem value="2">Ingénierie métier et produit</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
       </div>
-      <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
-        <div>
-          <img
-            src="/service-2.avif"
-            className="rounded-3xl"
-            width={600}
-            height={450}
-            alt=""
-          />
-        </div>
-        <div className="flex flex-col gap-5">
-          <h2 className="text-3xl font-semibold text-main-color">
-            Service - Infrastructure IT et télécom
-          </h2>
-          {services1.map((item) => (
-            <div key={item.title} className="grid grid-cols-9 gap-3">
-              <div>
-                <img src={item.image} width={75} height={75} alt="" />
+      {step === 0 && (
+        <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
+          <div className="flex flex-col gap-5">
+            <h2 className="text-3xl font-semibold text-main-color">
+              Nous transformons vos idées en réalité
+            </h2>
+            {services.map((item) => (
+              <div key={item.title} className="grid grid-cols-9 gap-3">
+                <div>
+                  <img src={item.image} width={75} height={75} alt="" />
+                </div>
+                <div className="col-span-8">
+                  <h2 className="text-base text-gray-900 font-semibold">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm">{item.description}</p>
+                </div>
               </div>
-              <div className="col-span-8">
-                <h2 className="text-base text-gray-900 font-semibold">
-                  {item.title}
-                </h2>
-                <p className="text-sm">{item.description}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div>
+            <img
+              src="/service-2.jpg"
+              className="rounded-3xl"
+              width={600}
+              height={450}
+              alt=""
+            />
+          </div>
         </div>
-      </div>
-      <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
-        <div className="flex flex-col gap-5">
-          <h2 className="text-3xl font-semibold text-main-color">
-            Service - Ingénierie métier et produit
-          </h2>
-          {services2.map((item) => (
-            <div key={item.title} className="grid grid-cols-9 gap-3">
-              <div>
-                <img src={item.image} width={75} height={75} alt="" />
+      )}
+      {step === 1 && (
+        <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
+          <div>
+            <img
+              src="/service-2.avif"
+              className="rounded-3xl"
+              width={600}
+              height={450}
+              alt=""
+            />
+          </div>
+          <div className="flex flex-col gap-5">
+            <h2 className="text-3xl font-semibold text-main-color">
+              Service - Infrastructure IT et télécom
+            </h2>
+            {services1.map((item) => (
+              <div key={item.title} className="grid grid-cols-9 gap-3">
+                <div>
+                  <img src={item.image} width={75} height={75} alt="" />
+                </div>
+                <div className="col-span-8">
+                  <h2 className="text-base text-gray-900 font-semibold">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm">{item.description}</p>
+                </div>
               </div>
-              <div className="col-span-8">
-                <h2 className="text-base text-gray-900 font-semibold">
-                  {item.title}
-                </h2>
-                <p className="text-sm">{item.description}</p>
+            ))}
+          </div>
+        </div>
+      )}
+      {step === 2 && (
+        <div className="grid lg:grid-cols-2 gap-5 my-12 items-center">
+          <div className="flex flex-col gap-5">
+            <h2 className="text-3xl font-semibold text-main-color">
+              Service - Ingénierie métier et produit
+            </h2>
+            {services2.map((item) => (
+              <div key={item.title} className="grid grid-cols-9 gap-3">
+                <div>
+                  <img src={item.image} width={75} height={75} alt="" />
+                </div>
+                <div className="col-span-8">
+                  <h2 className="text-base text-gray-900 font-semibold">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm">{item.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div>
+            <img
+              src="/service-1.jpg"
+              className="rounded-3xl"
+              width={600}
+              height={450}
+              alt=""
+            />
+          </div>
         </div>
-        <div>
-          <img
-            src="/service-1.jpg"
-            className="rounded-3xl"
-            width={600}
-            height={450}
-            alt=""
-          />
-        </div>
-      </div>
+      )}
     </div>
   );
 };
